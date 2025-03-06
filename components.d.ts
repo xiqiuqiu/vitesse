@@ -8,10 +8,17 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AiCard: typeof import('./src/components/AiCard.vue')['default']
+    AppLayout: typeof import('./src/components/AppLayout.vue')['default']
+    ChatInput: typeof import('./src/components/ChatInput.vue')['default']
+    ChatMessage: typeof import('./src/components/ChatMessage.vue')['default']
+    LeftSidebar: typeof import('./src/components/LeftSidebar.vue')['default']
+    RightSidebar: typeof import('./src/components/RightSidebar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheCounter: typeof import('./src/components/TheCounter.vue')['default']
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']
     TheInput: typeof import('./src/components/TheInput.vue')['default']
+    WelcomeMessage: typeof import('./src/components/WelcomeMessage.vue')['default']
   }
 }
